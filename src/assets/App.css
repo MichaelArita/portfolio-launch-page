@@ -1,7 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -16,6 +19,20 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.cursor {
+  background-color: #9E9E9E;
+  width: 1vmax;
+  height: 1vmax;
+  position: absolute;
+  left: -150px;
+  top: -1500px;
+  pointer-events: none;
+  border: none;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: none;
 }
 
 @keyframes logo-spin {
