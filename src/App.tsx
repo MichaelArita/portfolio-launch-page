@@ -1,6 +1,6 @@
 import ViteReact from './pages/vite-react-default/index.tsx';
 import { motion } from 'framer-motion';
-import LandingPage from './pages/temporary-landing/index';
+import LandingPage from './pages/landing-page/index.tsx';
 // import Cursor from './components/ui/Cursor.jsx';
 import { useEffect, useState } from 'react';
 
@@ -30,7 +30,8 @@ function App() {
 				animate={{ scale: [0, 1.3, 1] }}
 				transition={{ type: 'spring', bounce: 0.5, duration: 1 }}
 			> */}
-			<ViteReact />
+			<LandingPage />
+			{/* <ViteReact /> */}
 			{/* </motion.div> */}
 			{/* <LandingPage /> */}
 		</>

@@ -1,47 +1,26 @@
-import { useState } from 'react';
-import { TextEffect } from '../../components/TextEffect.tsx';
-import reactLogo from '../../assets/react.svg';
-import viteLogo from '/vite.svg';
+// import { useState } from 'react';
 import '../../assets/App.css';
 
-const ViteReact = () => {
-	const [count, setCount] = useState(0);
+import placeholderGif from '../../assets/placeholder-image.gif';
 
+// const textContainerVariant: Variants = {};
+
+const ViteReact = () => {
 	return (
-		<div
-			style={{
-				width: '100%',
-				minHeight: '100vh',
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}
-		>
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<TextEffect per="word" as="h1" preset="fade">
-				Animate your ideas with motion-primitives
-			</TextEffect>
-			{/* <h1>Vite + React</h1> */}
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
-		</div>
+		<>
+			<h2>About Me</h2>
+
+			<img src={placeholderGif} alt="" />
+
+			<h3>Michael Arita</h3>
+			<p>Software Engineer</p>
+
+			<p>Hi, my name is Michael, or Mike for short. </p>
+
+			<h2>Tech Stack</h2>
+
+			<h2>Projects</h2>
+		</>
 	);
 };
 
