@@ -1,44 +1,60 @@
-import './temporary-landing.css';
-// import Button from '@mui/material/Button';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+'use client';
+import React from 'react';
+import { StickyScroll } from '../../components/ui/sticky-scroll-reveal';
+import Image from '../../assets/placeholder-image.gif';
 
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-
-import bg from '../../assets/flowers.mp4';
-
-const LandingPage = () => {
-  return(
-    <>
-      <header className="header">
-        <svg width="52.893" height="25.594" viewBox="0 0 52.893 25.594" xmlns="http://www.w3.org/2000/svg">
-          <g strokeLinecap='round' fillRule='evenodd' fontSize='9pt' stroke='#000' strokeWidth='0.25mm' fill='#000'>
-            <path d="M 0 0 L 5.766 0 L 13.148 19.617 L 20.514 0 L 26.262 0 L 26.262 25.594 L 21.832 25.594 L 21.832 
-              17.156 L 22.271 5.871 L 14.713 25.594 L 11.531 25.594 L 3.99 5.889 L 4.43 17.156 L 4.43 25.594 L 0 25.594 
-              L 0 0 Z" id="0" vectorEffect="non-scaling-stroke"/>
-            <path d="M 48.252 25.594 L 46.16 19.635 L 36.246 19.635 L 34.172 25.594 L 29.549 25.594 L 39.217 0 L 43.207 
-              0 L 52.893 25.594 L 48.252 25.594 Z M 41.203 5.432 L 37.494 16.049 L 44.912 16.049 L 41.203 5.432 Z" 
-              id="1" vectorEffect="non-scaling-stroke"/>
-          </g>
-        </svg>
-      </header>
-      <main className="main">
-        <div className="main__text">
-          <h1 className="main__title">Coming Soon</h1>
-          <p className="main__paragraph">In the meantime, Sign up for our monthly newsletter to stay up to date.</p>
-        </div>
-        <form action="#" className="main__email-form">
-          <TextField name='query' label='Email Address'/>
-          <Button className="main__email-submit" variant='contained'>Sign Up</Button>
-        </form>
-      </main>
-      <footer className="footer">
-        <GitHubIcon />
-        <LinkedInIcon />
-      </footer>
-    </>
-  );
+const content = [
+	{
+		title: 'Collaborative Editing',
+		description:
+			'Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.',
+		content: (
+			<div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+				Collaborative Editing
+			</div>
+		),
+	},
+	{
+		title: 'Real time changes',
+		description:
+			'See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.',
+		content: (
+			<div className="flex h-full w-full items-center justify-center text-white">
+				<img
+					src={Image}
+					width={300}
+					height={300}
+					className="h-full w-full object-cover"
+					alt="linear board demo"
+				/>
+			</div>
+		),
+	},
+	{
+		title: 'Version control',
+		description:
+			"Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+		content: (
+			<div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
+				Version control
+			</div>
+		),
+	},
+	{
+		title: 'Running out of content',
+		description:
+			"Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+		content: (
+			<div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+				Running out of content
+			</div>
+		),
+	},
+];
+export function StickyScrollRevealDemo() {
+	return (
+		<div className="p-10">
+			<StickyScroll content={content} />
+		</div>
+	);
 }
-
-export default LandingPage;
