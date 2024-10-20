@@ -31,9 +31,9 @@ function App() {
 				animate={{ scale: [0, 1.3, 1] }}
 				transition={{ type: 'spring', bounce: 0.5, duration: 1 }}
 			> */}
-			<StickyScrollRevealDemo />
+			{/* <StickyScrollRevealDemo /> */}
 			{/* <LandingPage /> */}
-			{/* <ViteReact /> */}
+			<ViteReact />
 			{/* </motion.div> */}
 			{/* <LandingPage /> */}
 		</>

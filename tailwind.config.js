@@ -8,6 +8,9 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {},
+		fontFamily: {
+			sans: ['Oswald'],
+		},
 	},
 	plugins: [addVariablesForColors],
 };
