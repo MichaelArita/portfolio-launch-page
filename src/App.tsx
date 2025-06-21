@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+// import { useEffect, useState } from 'react';
+// import { motion } from 'framer-motion';
 // import Cursor from './components/ui/Cursor.jsx';
 import ViteReact from './pages/vite-react-default/index.tsx';
 import LandingPage from './pages/landing-page/index.tsx';
-import { StickyScrollRevealDemo } from './pages/temporary-landing/index.tsx';
+import TemporaryLanding from './pages/temporary-landing/index.tsx';
 
 function App() {
 	// const [mouseX, setMouseX] = useState(0);
@@ -32,8 +32,9 @@ function App() {
 				transition={{ type: 'spring', bounce: 0.5, duration: 1 }}
 			> */}
 			{/* <StickyScrollRevealDemo /> */}
-			{/* <LandingPage /> */}
+			{/* <LandingPage />	 */}
 			<ViteReact />
+			{/* <TemporaryLanding /> */}
 			{/* </motion.div> */}
 			{/* <LandingPage /> */}
 		</>

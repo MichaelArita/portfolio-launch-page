@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { cn } from '@/lib/utils';
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
@@ -27,7 +27,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 				transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
 			}}
 			className={cn(
-				'absolute -top-1/4 left-1/4 z-0 flex h-full w-full -translate-x-1/2 -translate-y-1/2 p-4',
+				'tw- tw- tw-absolute tw--top-1/4 tw-left-1/4 tw-z-0 tw-flex tw-h-full tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-p-4',
 				className,
 			)}
 			{...rest}
@@ -35,7 +35,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 			{rows.map((_, i) => (
 				<motion.div
 					key={`row` + i}
-					className="relative h-8 w-16 border-l border-slate-700"
+					className="tw- tw- tw-relative tw-h-8 tw-w-16 tw-border-l tw-border-slate-700"
 				>
 					{cols.map((_, j) => (
 						<motion.div
@@ -47,7 +47,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 								transition: { duration: 2 },
 							}}
 							key={`col` + j}
-							className="relative h-8 w-16 border-r border-t border-slate-700"
+							className="tw- tw-relative tw-h-8 tw-w-16 tw-border-r tw-border-t tw-border-slate-700"
 						>
 							{j % 2 === 0 && i % 2 === 0 ? (
 								<svg
@@ -56,7 +56,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 									viewBox="0 0 24 24"
 									strokeWidth="1.5"
 									stroke="currentColor"
-									className="pointer-events-none absolute -left-[22px] -top-[14px] h-6 w-10 stroke-[1px] text-slate-700"
+									className="tw-pointer-events-none tw-absolute tw--left-[22px] tw--top-[14px] tw-h-6 tw-w-10 tw-stroke-[1px] tw-text-slate-700"
 								>
 									<path
 										strokeLinecap="round"
