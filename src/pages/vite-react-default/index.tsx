@@ -1,6 +1,6 @@
 'use client';
 import { Boxes } from '@/components/ui/background-boxes';
-import { TextEffect } from '@/components/TextEffect';
+// import { TextEffect } from '@/components/TextEffect';
 import { cn } from '@/lib/utils';
 
 import Drawer from '@/components/Drawer';
@@ -24,14 +24,14 @@ export default function ViteReact() {
 				{/* <p className="relative z-20 mt-2 text-center text-sky-300">
 					Framer motion is the best animation library ngl
 				</p> */}
-				<TextEffect
+				{/* <TextEffect
 					per="word"
 					as="p"
 					preset="slide"
 					className="tw-relative tw-z-20 tw-mt-2 tw-text-center tw-text-neutral-300"
 				>
 					Full Stack Software Engineer
-				</TextEffect>
+				</TextEffect> */}
 			</div>
 		</>
 	);

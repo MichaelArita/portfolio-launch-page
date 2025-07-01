@@ -8,6 +8,8 @@
 		"paths": {
 			"@/*": ["src/*"]
 		},
+		"rootDirs": ["."],
+		// "verbatimModuleSyntax": true,
 
 		/* Bundler mode */
 		"moduleResolution": "bundler",
@@ -22,5 +24,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
+	// "include": ["vite.config.ts", ".react-router/types/**/*"]
 	"include": ["vite.config.ts"]
 }

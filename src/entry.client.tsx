@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import { HydratedRouter } from 'react-router/dom';
 import './assets/index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.hydrateRoot(
+	document,
 	<React.StrictMode>
-		<App />
+		<HydratedRouter />
 	</React.StrictMode>,
 );

@@ -1,0 +1,1 @@
+import{w as o,o as s,O as e,S as r}from"./chunk-QMGIS6GS-aVVX_tGU.js";const i=o(function(){return s.jsxs("html",{children:[s.jsx("head",{children:s.jsx("link",{rel:"icon",href:"data:image/x-icon;base64,AA"})}),s.jsxs("body",{children:[s.jsx("h1",{children:"hello world!"}),s.jsx(e,{}),s.jsx(r,{})]})]})});export{i as default};

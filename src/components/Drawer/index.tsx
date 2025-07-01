@@ -21,7 +21,7 @@ export default function Drawer() {
 					<motion.footer
 						key={'footearrrarar'}
 						className={cn(
-							'tw-fixed tw-bottom-0 tw-left-0 tw-z-[100] tw-w-full',
+							'tw-dark tw-fixed tw-bottom-0 tw-left-0 tw-z-[100] tw-w-full',
 						)}
 					>
 						<motion.div
@@ -55,8 +55,8 @@ export default function Drawer() {
 								},
 							}}
 							className={cn(
-								'tw-font-sans[roboto] tw-text-center tw-text-xl tw-font-medium tw-uppercase tw-italic tw-tracking-wide tw-text-neutral-100',
-								'tw-relative tw-z-[2] tw-block tw-w-full tw-bg-neutral-700',
+								'tw-font-sans[roboto] tw-text-center tw-text-xl tw-font-medium tw-uppercase tw-italic tw-tracking-wide tw-text-neutral-100 dark:tw-text-neutral-700',
+								'tw-relative tw-z-[2] tw-block tw-w-full tw-bg-neutral-700 dark:tw-bg-slate-200',
 							)}
 						>
 							<KeyboardButton
